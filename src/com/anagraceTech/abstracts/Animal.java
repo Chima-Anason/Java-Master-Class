@@ -38,7 +38,5 @@ abstract public class Animal {
                 '}';
     }
 
-    public void makeSound(){
-        System.out.println("Making sound!!!!");
-    }
+    public abstract void makeSound();
 }
