@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Employee {
 
-    private String name;
+    protected String name;
     private int age;
     private String address;
     private String experience;

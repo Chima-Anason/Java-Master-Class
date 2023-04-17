@@ -9,6 +9,6 @@ public class Manager extends Employee{
     }
 
     public void report(){
-        System.out.println("Manager writing team report");
+        System.out.println(this.name + ": Manager writing team report");
     }
 }
