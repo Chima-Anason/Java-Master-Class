@@ -10,12 +10,15 @@ public class Main {
 
         String path = "src/data.txt";
 
+
         ExtractorReport numberExtractorReport = new NumberExtractorReport();
         ExtractorReport emailExtractorReport = new EmailExtractorReport();
+        ExtractorReport[] reports = {numberExtractorReport, emailExtractorReport};
         try {
-            numberExtractorReport.prepareAndSendReport(path);
-            System.out.println("\n");
-            emailExtractorReport.prepareAndSendReport(path);
+            for (ExtractorReport report : reports) {
+                report.prepareAndSendReport(path);
+                System.out.println("\n");
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
