@@ -20,13 +20,14 @@ public class AreaCalculator {
 
 
     /* ➡️ FixMe : This breaks the (1)Single Responsibilty principle because
-                this class is filled with excessive functionality */
+                this class is filled with excessive functionality*/
+    // Solution : Move them to another new class
 
-    public String json(List<Object> shapes){
+    /*public String json(List<Object> shapes){
         return "{sum: %s}".formatted(sum(shapes));
     }
 
     public String csv(List<Object> shapes){
         return "sum,%s".formatted(sum(shapes));
-    }
+    }*/
 }
