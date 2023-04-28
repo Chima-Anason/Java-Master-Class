@@ -1,4 +1,4 @@
-package com.anagraceTech.SOLID_Principles.S_part;
+package com.anagraceTech.SOLID_Principles;
 
 import java.util.List;
 

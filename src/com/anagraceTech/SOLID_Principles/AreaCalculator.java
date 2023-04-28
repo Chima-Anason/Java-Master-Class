@@ -1,4 +1,4 @@
-package com.anagraceTech.SOLID_Principles.S_part;
+package com.anagraceTech.SOLID_Principles;
 
 import java.util.List;
 
@@ -14,20 +14,14 @@ public class AreaCalculator {
             if(shape instanceof Circle){
                 sum += Math.PI* Math.pow(((Circle) shape).getRadius(), 2);
             }
+            /* ➡️ FixMe : This breaks the (2)Open Close principle because
+                this class is open for modification whenever a new Shape class is created*/
+            if(shape instanceof Cube){
+                // Logic
+            }
         }
         return sum;
     }
 
 
-    /* ➡️ FixMe : This breaks the (1)Single Responsibilty principle because
-                this class is filled with excessive functionality*/
-    // Solution : Move them to another new class
-
-    /*public String json(List<Object> shapes){
-        return "{sum: %s}".formatted(sum(shapes));
-    }
-
-    public String csv(List<Object> shapes){
-        return "sum,%s".formatted(sum(shapes));
-    }*/
 }
