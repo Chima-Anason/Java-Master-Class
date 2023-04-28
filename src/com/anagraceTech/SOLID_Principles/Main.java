@@ -9,8 +9,8 @@ public class Main {
         Shape circle = new Circle(10);
         Shape square = new Square(10);
         Shape cube = new Cube();
-        Shape noShape = new NoShape();
-        List<Shape> shapes = List.of(circle, square, cube, noShape);
+        //NoShape noShape = new NoShape();
+        List<Shape> shapes = List.of(circle, square, cube);
         ShapesPrinter printer = new ShapesPrinter();
         int sum = areaCalculator.sum(shapes);
         System.out.println(printer.json(sum));
