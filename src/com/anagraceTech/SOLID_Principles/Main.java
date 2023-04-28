@@ -6,10 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
         AreaCalculator areaCalculator = new AreaCalculator();
-        Circle circle = new Circle(10);
-        Square square = new Square(10);
-        Cube cube = new Cube();
-        List<Shape> shapes = List.of(circle, square, cube);
+        Shape circle = new Circle(10);
+        Shape square = new Square(10);
+        Shape cube = new Cube();
+        Shape noShape = new NoShape();
+        List<Shape> shapes = List.of(circle, square, cube, noShape);
         ShapesPrinter printer = new ShapesPrinter();
         int sum = areaCalculator.sum(shapes);
         System.out.println(printer.json(sum));
