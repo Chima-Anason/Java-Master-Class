@@ -16,4 +16,11 @@ public class Circle implements Shape{
     public double area() {
         return Math.PI* Math.pow(getRadius(), 2);
     }
+
+    /* ➡️ FixMe : This breaks the (4)Interface Segregation principle because
+                this class Circle can not calculate Volume because its not a 3-D Shape*/
+    @Override
+    public double volume() {
+        return 0;
+    }
 }
