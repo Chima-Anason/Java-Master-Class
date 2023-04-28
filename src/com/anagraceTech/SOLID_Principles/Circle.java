@@ -19,8 +19,5 @@ public class Circle implements Shape{
 
     /* ➡️ FixMe : This breaks the (4)Interface Segregation principle because
                 this class Circle can not calculate Volume because its not a 3-D Shape*/
-    @Override
-    public double volume() {
-        return 0;
-    }
+
 }
